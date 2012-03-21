@@ -12,7 +12,7 @@ Release: 1%{?dist}
 URL: http://java.net/projects/akuma
 Source: %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildArch: noarch
+BuildArch: x86_64
 
 BuildRequires: java >= 0:1.6.0
 BuildRequires: ant >= 0:1.7.0
@@ -35,13 +35,13 @@ rm -rf $RPM_BUILD_ROOT
 # Create the directory structure required to lay down our files
 # common
 install -d -m 755 $RPM_BUILD_ROOT/usr/share/java/
-install -m 644 dist/lib/akuma-%{version}.jar $RPM_BUILD_ROOT/usr/share/java/
+install -m 644 dist/lib/akuma.jar $RPM_BUILD_ROOT/usr/share/java/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-/usr/share/java/akuma-%{version}.jar
+/usr/share/java/akuma.jar
 
 
 %changelog
