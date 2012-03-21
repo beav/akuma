@@ -8,7 +8,7 @@ Summary: akuma daemonizer
 Group: Internet/Applications
 License: MIT
 Version: 1.7
-Release: 1%{?dist}
+Release: 2%{?dist}
 URL: http://java.net/projects/akuma
 Source: %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -45,6 +45,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Wed Mar 21 2012 Chris Duryee (beav) <cduryee@redhat.com>
+- use x86_64 for now, and remove version from jar filename (cduryee@redhat.com)
+
 * Mon Feb 27 2012 Chris Duryee (beav) <cduryee@redhat.com>
 - new package built with tito
 
