@@ -12,7 +12,7 @@ Release: 2%{?dist}
 URL: http://java.net/projects/akuma
 Source: %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildArch: x86_64
+BuildArch: x86_64 i686
 
 BuildRequires: java >= 0:1.6.0
 BuildRequires: ant >= 0:1.7.0
