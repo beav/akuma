@@ -8,7 +8,7 @@ Summary: akuma daemonizer
 Group: Internet/Applications
 License: MIT
 Version: 1.7
-Release: 2%{?dist}
+Release: 3%{?dist}
 URL: http://java.net/projects/akuma
 Source: %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -45,6 +45,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Mar 26 2012 Chris Duryee (beav) <cduryee@redhat.com>
+- use x86_64 and i686 (cduryee@redhat.com)
+
 * Wed Mar 21 2012 Chris Duryee (beav) <cduryee@redhat.com>
 - use x86_64 for now, and remove version from jar filename (cduryee@redhat.com)
 
